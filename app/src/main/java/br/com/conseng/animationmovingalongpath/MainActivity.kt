@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val animationViewArea = findViewById<R.id.an>()
+        val animaView : AnimationView = findViewById(R.id.animationView)
 
         val avatars = hashSetOf(R.drawable.eric_cartman, R.drawable.kenny_mc_cormick,
                 R.drawable.kyle_broflovski, R.drawable.timmy_burch,
@@ -23,6 +23,6 @@ class MainActivity : AppCompatActivity() {
             val playerDto = PlayerDto(resources, avatars.elementAt(i), distance, offset, offset)
             players.add(playerDto)
         }
-        animationView..setPlayers(players)
+        animaView.setPlayers(players)
     }
 }

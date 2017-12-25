@@ -242,7 +242,4 @@ class AnimationView : View {
         this.players = players
         invalidate()
     }
-
-
-
 }
